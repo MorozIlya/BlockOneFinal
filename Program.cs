@@ -1,7 +1,5 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
-string[] array = new string[5] {"15555", "25555", "333","433", "5444"};
-string[] finalarray = new string[array.Length]
+﻿string[] array = new string[5] {"15555", "25555", "333", "433", "5444"};
+string[] finalarray = new string[array.Length];
 
 void ArrayWithIf(string[] array, string[] finalarray)
 {   
@@ -21,7 +19,7 @@ void PrintArray(string[] array)
     i < array.Length;
     i++ )
     {
-        Console.Write($"{array[i]}");
+        Console.Write($"{array[i]} ");
     }
 }
 ArrayWithIf(array, finalarray);
