@@ -8,6 +8,21 @@ void ArrayWithIf(string[] array, string[] finalarray)
     int count = 0;
     for (int i = 0; i < array.Length; i++)
     {
-        if(array[i].Length <= 3)
+    if(array[i].Length <= 3)
+        {
+        finalarray[count] = array[i];
+        count++;
+        }
     }
 }
+void PrintArray(string[] array)
+{
+    for ( int i = 0;
+    i < array.Length;
+    i++ )
+    {
+        Console.Write($"{array[i]}");
+    }
+}
+ArrayWithIf(array, finalarray);
+PrintArray(finalarray);
